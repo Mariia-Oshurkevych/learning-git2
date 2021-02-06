@@ -1,0 +1,241 @@
+/*Variables*/
+:root {
+	--color-one: #f6b93b;
+	--font-navbar: 'Courgette', cursive;
+	--font-text: 'Raleway', sans-serif;
+}
+
+/*Global*/
+*, *::before, ::after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: o auto;
+	font-size: 16px;
+	line-height: 1,7px;
+	font-family: var(--font-text);
+	color: black;
+}
+
+.container {
+	max-width: 1140px;
+	padding: 0 20px;
+	text-align: center;
+	margin-left: 90px;
+
+}
+
+section {
+	padding: 96px 0;
+	margin: 96px 0;
+}
+
+/*Header*/
+nav a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.navbar-brand {
+	color: var(--color-one);
+	font-family: var(--font-header);
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+li a {
+	color: white;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+}
+
+.splash {
+	height: 100vh;
+	background-image: url('https://i.postimg.cc/K8jnVw6S/pexels-adrien-olichon-2387793.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container-one {
+	margin-top: 200px;
+}
+
+.page-title {
+	color: white;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+
+.page-subtitle {
+	font-size: 50px;
+	color: white;
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+.btn {
+	color:white;
+	text-decoration: none;
+	display: inline-block;
+	min-width: 200px;
+	margin: 8px auto 0 auto;
+	padding: 16px;
+	border-radius: 5px;
+	background-color: var(--color-one);
+	cursor: pointer;
+}
+
+/*Services*/
+.services {
+	margin-top: -2px;
+	padding-top: 75px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: -5px;
+}
+
+.section-subtitle {
+	text-align: center;
+	margin-top: 13px;
+	color: grey;
+}
+
+.wrapper-for-services {
+	padding-top: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	display: flex;
+	margin-left: 205px;
+
+}
+
+.services-elements img {
+	border-radius: 50%;
+	margin-left: 35px;
+	margin-right: -60px;
+}
+
+.services-elements h3, p {
+	text-align: center;
+}
+
+.services-elements {
+	margin: 15px;
+}
+
+/*Our portfolio*/
+.our-portfolio {
+	background-color: rgb(240, 240, 240);
+}
+
+.wrapper-for-our-portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 250px;
+	margin-right: 250px;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.our-portfolio-elements {
+	flex: 0 0 33,333%;
+	margin: 15px;
+}
+
+.our-portfolio-elements h3, p {
+	text-align: center;
+	background-color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.our-portfolio-elements img {
+	margin-bottom: 0;
+}
+
+/*Footer*/
+footer {
+	margin-top: -70px;
+}
+
+.wrapper-for-footer {
+	display: flex;
+}
+
+.copyright {
+	flex: 1;
+	padding-left: 150px;
+	margin-top: 10px;
+}
+
+.social-media {
+	display: flex;
+	flex: 2;
+	justify-content: flex-start;
+	padding-left: 70px;
+}
+
+.social-media-sign {
+	background-color: black;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 4px;
+}
+
+.social-media i {
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	padding-left: 6px;
+	padding-top: 5px;
+}
+
+/*Media*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.wrapper-for-services {
+		flex-direction: column;
+	}
+
+	.services-elements h3, p {
+		margin-left: -215px;
+	}
+
+	.services-elements img {
+		margin-left: 50px;
+	}
+
+	.our-portfolio-elements p {
+		margin-left: 1px;
+	}
+
+	.container-one {
+		margin-right: 100px;
+		margin-top: 100px;
+	}
+	
+	.social-media {
+		margin-left: -140px;
+	}
+}
+
