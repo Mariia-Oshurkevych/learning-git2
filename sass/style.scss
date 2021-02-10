@@ -1,9 +1,7 @@
 /*Variables*/
-:root {
-	$color-one: #f6b93b;
-	$font-navbar: 'Courgette', cursive;
-	$font-text: 'Montserrat', sans-serif;
-}
+$color-one: #f6b93b;
+$font-navbar: 'Courgette', cursive;
+$font-text: 'Montserrat', sans-serif;
 
 /*Global*/
 *, *::before, ::after{
@@ -39,7 +37,7 @@ nav a {
 
 .navbar-brand {
 	color: $color-one;
-	font-family: $font-header;
+	font-family: $font-navbar;
 	font-size: 25px;
 	margin-top: 5px;
 }
