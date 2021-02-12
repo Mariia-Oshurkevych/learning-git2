@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: o auto;
+  margin: 0;
   font-size: 16px;
   line-height: 1,7px;
   font-family: "Montserrat", sans-serif;
@@ -16,7 +16,7 @@ body {
   max-width: 1140px;
   padding: 0 20px;
   text-align: center;
-  margin-left: 90px;
+  /*margin-left: 90px;*/
 }
 
 section {
@@ -63,10 +63,15 @@ li a {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 .container-one {
-  margin-top: 200px;
+  /*margin-top: 200px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .page-title {
@@ -121,13 +126,13 @@ li a {
   padding-bottom: 0;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 205px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .services-elements img {
   border-radius: 50%;
   margin-left: 35px;
-  margin-right: -60px;
 }
 
 .services-elements h3, p {
@@ -136,6 +141,8 @@ li a {
 
 .services-elements {
   margin: 15px;
+  -ms-flex: 0 0 33,333%;
+      flex: 0 0 33,333%;
 }
 
 /*Our portfolio*/
@@ -177,26 +184,32 @@ footer {
   margin-top: -70px;
 }
 
+.container-for-footer {
+  max-width: 1140px;
+  padding: 0 20px;
+  /*margin-left: 90px;*/
+}
+
 .wrapper-for-footer {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .copyright {
-  -ms-flex: 1;
-      flex: 1;
-  padding-left: 150px;
+  -ms-flex: 1 0 0px;
+      flex: 1 0 0;
   margin-top: 10px;
 }
 
 .social-media {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex: 2;
-      flex: 2;
+  -ms-flex: 2 0 0px;
+      flex: 2 0 0;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  padding-left: 70px;
 }
 
 .social-media-sign {
