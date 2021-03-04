@@ -130,6 +130,7 @@ li a {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 
 }
@@ -226,6 +227,8 @@ footer {
 /*Media*/
 @media (min-width: 768px) and (max-width: 991px) {
 	.wrapper-for-services {
+		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 	}
 
