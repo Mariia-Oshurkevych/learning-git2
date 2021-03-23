@@ -238,12 +238,6 @@ footer {
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  .services-elements h3, p {
-    margin-left: -215px;
-  }
-  .services-elements img {
-    margin-left: 50px;
-  }
   .our-portfolio-elements p {
     margin-left: 1px;
   }
