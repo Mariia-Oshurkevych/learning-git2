@@ -157,8 +157,6 @@ li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 250px;
-  margin-right: 250px;
   -ms-flex-pack: center;
       justify-content: center;
   margin-top: 40px;
